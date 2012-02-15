@@ -1,0 +1,21 @@
+This is parser which currenly reads in a file of the form:
+
+0	0
+0	1
+2	3
+...
+
+where this is two numbers on a line separated by a tab character.
+
+It currently outputs in the form:
+
+[0,0,[[1,1]]]
+[2,0,[[3,1]]]
+
+which says that vertex 0 has value 0 and an edge to vertex 1 with weight 1, and vertex 2 has value 0 and an edge to vertex 3 of value 1.
+
+TODO
+* Still outputs a lot of unneeded data, such as weight of edge, for some algorithms
+* Prints to stdout
+* Input file is hardcoded
+* Output file should be user defined
