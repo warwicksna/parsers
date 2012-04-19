@@ -25,6 +25,9 @@ public class Parser {
 				} else {
 					System.out.println(s.deleteCharAt(s.length()-1).toString()+"]]");
 					s = new StringBuilder();
+					current = node[0];
+					s.append("["+current+",0,[");
+					s.append("["+node[1]+",1],");
 				}
 			}
 		} catch (Exception e) {
